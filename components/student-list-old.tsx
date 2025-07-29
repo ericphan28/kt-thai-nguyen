@@ -311,7 +311,7 @@ export function StudentList() {
                     <Facebook className="w-4 h-4 text-blue-600" />
                     <div className="flex items-center gap-2">
                       <span>Facebook: </span>
-                      <a 
+                      <a
                         href={student.link_facebook}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -361,7 +361,7 @@ export function StudentList() {
                   <span className="text-sm font-medium">Sở thích</span>
                 </div>
                 <div className="flex flex-wrap gap-1">
-                  {student.so_thich.map((soThich: string) => (
+                  {student.so_thich.map((soThich) => (
                     <Badge
                       key={soThich}
                       variant="secondary"

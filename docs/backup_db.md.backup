@@ -1,0 +1,14 @@
+# Backup toàn bộ schema public - Tables, Views, Functions, Indexes, Triggers
+$env:PGPASSWORD = "BIQL8DsKKMb273Gj"
+pg_dump --host=aws-0-ap-southeast-1.pooler.supabase.com --port=6543 --username=postgres.cktnodqbslzlgkgdwquj --dbname=postgres --schema=public --schema-only --no-owner --no-privileges --verbose --file=backup_ktthainguyen_schema_complete.sql
+
+
+# Backup chỉ dữ liệu (không có cấu trúc)
+$env:PGPASSWORD = "BIQL8DsKKMb273Gj"
+pg_dump --host=aws-0-ap-southeast-1.pooler.supabase.com --port=6543 --username=postgres.cktnodqbslzlgkgdwquj --dbname=postgres --schema=public --data-only --no-owner --no-privileges --file=backup_ktthainguyen_data.sql
+
+
+# Backup toàn bộ (cấu trúc + dữ liệu)
+$env:PGPASSWORD = "BIQL8DsKKMb273Gj"
+pg_dump --host=aws-0-ap-southeast-1.pooler.supabase.com --port=6543 --username=postgres.cktnodqbslzlgkgdwquj --dbname=postgres --schema=public --no-owner --no-privileges --file=backup_ktthainguyen_complete.sql
+

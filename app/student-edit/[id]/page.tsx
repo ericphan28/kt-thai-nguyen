@@ -17,6 +17,9 @@ export default async function StudentEditPage({ params }: { params: Promise<{ id
               Lớp Kế Toán VB2 2025 - Đại Học Thái Nguyên
             </p>
             <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto mt-4 rounded-full" />
+            <div className="mt-4 text-xs text-gray-500 dark:text-gray-400">
+              Tác giả: Thang Phan | Zalo: <a href="tel:0907136029" className="text-orange-600 hover:underline">0907136029</a> | Facebook: <a href="https://www.facebook.com/thang.phan.334" target="_blank" rel="noopener noreferrer" className="text-orange-600 hover:underline">thang.phan.334</a>
+            </div>
           </div>
           
           <div className="max-w-2xl mx-auto">

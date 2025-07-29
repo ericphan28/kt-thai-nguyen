@@ -51,7 +51,11 @@ export async function updateSession(request: NextRequest) {
     request.nextUrl.pathname !== "/" &&
     !user &&
     !request.nextUrl.pathname.startsWith("/login") &&
-    !request.nextUrl.pathname.startsWith("/auth")
+    !request.nextUrl.pathname.startsWith("/auth") &&
+    !request.nextUrl.pathname.startsWith("/student-info") &&
+    !request.nextUrl.pathname.startsWith("/student-list") &&
+    !request.nextUrl.pathname.startsWith("/student-edit") && // <-- Cho phép chỉnh sửa sinh viên
+    !request.nextUrl.pathname.startsWith("/api/") // <-- Bỏ chặn API
   ) {
     // no user, potentially respond by redirecting the user to the login page
     const url = request.nextUrl.clone();
