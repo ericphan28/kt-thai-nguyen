@@ -1,5 +1,11 @@
 import { StudentList } from "@/components/student-list"
 import { StudentNavigation } from "@/components/student-navigation"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Danh Sách Sinh Viên | Lớp Kế Toán VB2 2025",
+  description: "Danh sách sinh viên lớp Kế Toán VB2 2025 - Đại Học Thái Nguyên"
+}
 
 export default function StudentListPage() {
   return (

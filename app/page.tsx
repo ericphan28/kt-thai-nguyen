@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserPlus, Users, GraduationCap, ArrowRight } from "lucide-react";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Trang Chủ | Lớp Kế Toán VB2 2025",
+  description: "Trang chủ hệ thống quản lý lớp Kế Toán VB2 2025 - Đại Học Thái Nguyên"
+};
 
 export default function Home() {
   return (

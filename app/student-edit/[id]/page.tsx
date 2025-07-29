@@ -1,5 +1,11 @@
 import { StudentEditForm } from "@/components/student-edit-form"
 import { StudentNavigation } from "@/components/student-navigation"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Chỉnh Sửa Thông Tin | Lớp Kế Toán VB2 2025",
+  description: "Chỉnh sửa thông tin sinh viên lớp Kế Toán VB2 2025"
+}
 
 export default async function StudentEditPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params

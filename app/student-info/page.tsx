@@ -1,5 +1,11 @@
 import { StudentInfoForm } from "@/components/student-info-form"
 import { StudentNavigation } from "@/components/student-navigation"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Đăng Ký Thông Tin | Lớp Kế Toán VB2 2025",
+  description: "Đăng ký thông tin sinh viên mới vào lớp Kế Toán VB2 2025"
+}
 
 export default function StudentInfoPage() {
   return (
